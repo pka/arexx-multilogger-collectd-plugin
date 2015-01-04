@@ -37,7 +37,6 @@ setup(
     author='Pirmin Kalberer',
     author_email='pka@sourcepole.ch',
     url=URL,
-    download_url='%s/archive/multilogger_collectd-%s.tar.gz' % (URL, VERSION),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
