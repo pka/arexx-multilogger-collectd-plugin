@@ -15,22 +15,11 @@ def read(*names, **kwargs):
     ).read()
 
 
-def find_version(*file_paths):
-    """ Get version number from file """
-    version_file = read(*file_paths)
-    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
-                              version_file, re.M)
-    if version_match:
-        return version_match.group(1)
-    raise RuntimeError("Unable to find version string.")
-
-
-VERSION = find_version('multilogger_collectd.py')
 URL = 'https://github.com/pka/arexx-multilogger-collectd-plugin'
 setup(
     name='multilogger_collectd',
-    version=VERSION,
-    py_modules=['multilogger_collectd'],
+    packages=['multilogger_collectd'],
+    version='0.1.1',
     license='GPLv2',
     description='A collectd plugin for monitoring AREXX Multiloggers',
     long_description=read('README.rst'),

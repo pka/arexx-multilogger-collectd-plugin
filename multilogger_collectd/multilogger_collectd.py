@@ -17,8 +17,6 @@
 
 """ multilogger_collectd - AREXX Multilogger collectd plugin """
 
-__version__ = '0.1.0'
-
 import collectd  # pylint: disable=import-error
 from multilogger import Multilogger
 from datetime import datetime

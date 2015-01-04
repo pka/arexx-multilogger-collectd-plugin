@@ -48,7 +48,7 @@ Add the following to your collectd config (typically
     </LoadPlugin>
 
     <Plugin python>
-        Import "multilogger_collectd"
+        Import "multilogger_collectd.multilogger_collectd"
 
         <Module multilogger_collectd>
             <Sensor "9531">
